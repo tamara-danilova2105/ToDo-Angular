@@ -1,0 +1,82 @@
+.containerOne, .containerTwo {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 60px;
+    background: linear-gradient( to left, #3b14a7, #bf1363 );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.inputField {
+    padding: 20px;
+    width: 40%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+    padding: 20px;
+    background-color: #39a6a3;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+.toDoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toDoAdded {
+    background-color: #99154e;
+    list-style: none;
+    width: 50%;
+    padding: 15px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 1px solid white;
+    margin-right: 32px;
+    overflow-wrap: break-word;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+.toDoCompleted {
+    background-color: #1eae98;
+    color: black;
+    font-weight: bold;
+    text-decoration: line-through;
+    transition: all 1s ease;
+}
+
+@media all and (max-width: 800px) {
+h1 {
+    font-size: 50px;
+}
+
+.inputField {
+    width: 60%;
+}
+}
+
+@media all and (max-width: 500px) {
+h1 {
+    font-size: 30px;
+}
+
+.toDoAdded {
+    font-size: 20px;
+    padding: 10px;
+    width: 90%;
+    margin-right: 40px;
+}
+}

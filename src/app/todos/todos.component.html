@@ -1,0 +1,20 @@
+<div class="containerOne">
+    <h1>Планы на сегодня:</h1>
+</div>
+
+<div class="containerTwo">
+    <input
+    class="inputField" type="text"
+    placeholder="Что вы будете делать сегодня?"
+    [(ngModel)]="todoItem"
+    (keyup.enter)="addToDo()">
+
+    <button
+    class="btn" type="submit" 
+    (click)="addToDo()" 
+    >+</button>
+</div>
+
+<ul class="toDoContainer" >
+    <app-todo class="toDoAdded" *ngFor="let todo of todos" [toDoList]="todo"></app-todo>
+</ul>
